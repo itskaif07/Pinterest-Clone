@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest | Updates and notifications</title>
+    <link rel="shortcut icon" href="../Assets/icons8-pinterest-48.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-black text-white">
+
+    <div id="unm" class="flex  items-center justify-center space-x-2 py-2">
+        <div id="update" class="focus:bg-white flex items-center justify-center text-xl font-medium rounded-full px-6 py-3">
+            <h1>Updates</h1>
+        </div>
+        <div id="message" class="focus:bg-white flex items-center justify-center text-xl font-medium rounded-full px-6 py-3">
+            <h1>Messages</h1>
+        </div>
+    </div>
+
+    <div id="updates" class="space-y-14">
+
+    <div id="row1" class="mt-4 space-y-4">
+        <p>Your home feed has new Pins <span class="text-gray-400 font-bold">1h</span></p>
+        <div id="box" class="w-full h-[30vh] flex">
+            <img src="https://i.pinimg.com/236x/f7/2c/5b/f72c5b90487e3517185ab16997cba0fe.jpg" alt="" class="w-1/3 h-full rounded-l-xl object-cover object-center">
+            <img src="https://i.pinimg.com/236x/12/8b/95/128b95e03592f31e2c92672748d94311.jpg" alt="" class="w-1/3 h-full object-cover object-center">
+            <img src="https://i.pinimg.com/236x/00/15/e1/0015e1c0cabb5ee9fe735fb730f5315d.jpg" alt="" class="w-1/3 h-full rounded-r-xl object-cover object-center">
+        </div>
+    </div>
+
+    <div id="row2" class="mt-4 space-y-4">
+        <p>Trending on Pinterest <span class="text-gray-400 font-bold">6h</span></p>
+        <div id="box" class="w-full h-[30vh] flex">
+            <img src="https://i.pinimg.com/236x/1b/30/0c/1b300c6e3bf9b39141af5baf939129e5.jpg" alt="" class="w-1/3 h-full rounded-l-xl object-cover object-center">
+            <img src="https://i.pinimg.com/236x/d5/21/13/d5211348decac127159d5bcfded26c19.jpg" alt="" class="w-1/3 h-full object-cover object-center">
+            <img src="https://i.pinimg.com/564x/7f/e4/20/7fe42026a9f21b53bd5e6df4303423bb.jpg" alt="" class="w-1/3 h-full rounded-r-xl object-cover object-center">
+        </div>
+    </div>
+
+    <div id="row3" class="mt-4 space-y-4">
+        <p>Photo Inspired by You <span class="text-gray-400 font-bold">1d</span></p>
+        <div id="box" class="w-full h-[30vh] flex">
+            <img src="https://i.pinimg.com/236x/a6/73/a0/a673a03d632925ac76e7f71bc0c5bc06.jpg" alt="" class="w-1/3 h-full rounded-l-xl object-cover object-center">
+            <img src="https://i.pinimg.com/236x/c2/3b/63/c23b634b4052b7c4800888544eb477a1.jpg" alt="" class="w-1/3 h-full object-cover object-center">
+            <img src="https://i.pinimg.com/236x/bd/80/53/bd805328c3efd987f3e7e6f941349a65.jpg" alt="" class="w-1/3 h-full rounded-r-xl object-cover object-center">
+        </div>
+    </div>
+
+    <div id="row4" class="mt-4 space-y-4">
+        <p>Your Home Feed has new Pins <span class="text-gray-400 font-bold">2d</span></p>
+        <div id="box" class="w-full h-[30vh] flex">
+            <img src="https://i.pinimg.com/236x/fe/97/9d/fe979dcda23817c29a80ad3d8a7ba624.jpg" alt="" class="w-1/3 h-full rounded-l-xl object-cover object-center">
+            <img src="https://i.pinimg.com/236x/ee/fc/9e/eefc9e827d7f2b0540bb125259ca7b43.jpg" alt="" class="w-1/3 h-full object-cover object-center">
+            <img src="https://i.pinimg.com/236x/9a/f5/de/9af5debaa70154b926938bee92b2b605.jpg" alt="" class="w-1/3 h-full rounded-r-xl object-cover object-center">
+        </div>
+    </div>
+
+    <div id="row5" class="mt-4 space-y-4">
+        <p>Your Home Feed has new Pins <span class="text-gray-400 font-bold">3d</span></p>
+        <div id="box" class="w-full h-[30vh] flex">
+            <img src="https://i.pinimg.com/236x/64/f1/4a/64f14abb03b3ae7760aa989c385e6f73.jpg" alt="" class="w-1/3 h-full rounded-l-xl object-cover object-center">
+            <img src="https://i.pinimg.com/236x/0e/6c/c7/0e6cc747e8e8636292340ac0b296c93f.jpg" alt="" class="w-1/3 h-full object-cover object-center">
+            <img src="https://i.pinimg.com/236x/39/11/6c/39116c247669762f4ce72be4ce2b862e.jpg" alt="" class="w-1/3 h-full rounded-r-xl object-cover object-center">
+        </div>
+    </div>
+</div>
+
+<div id="messages" class="hidden space-y-8 py-6 px-6">
+    
+    <div id="new" class="flex items-center space-x-4">
+       <div class="bg-[#e60023] rounded-3xl p-3 flex items-center justify-center"> <img src="../Assets/icons8-edit-64.png" alt="edit" class="w-5"> </div>
+        <h1 class="text-2xl">New Message</h1>
+    </div>
+    
+   <div id="name" class="space-y-2">
+       <h1>Messages</h1>
+       <div class="flex items-center space-x-4">
+       <img src="../Assets/icons8-pinterest-48.png" alt="" class="w-14">
+       <div>
+           <h1 class="text-xl">Pinterest, India</h1>
+           <h4 class="text-gray-500 font-bold text-lg">Sent a Pin!</h4>
+       </div>
+    </div>
+   </div>
+
+   <div id="contact" class="space-y-2">
+       <h1>Contacts</h1>
+       <div id="Invite" class="flex items-center space-x-4">
+        <div class="bg-gray-500 rounded-full p-3"><img src="../Assets/icons8-invite-48.png" alt="" class="w-6"></div> 
+        <div>
+            <h1 class="font-bold">Invite your friends</h1>
+            <h4 class="text-sm">Connect to start chatting</h4>
+        </div>
+       </div>
+   </div>
+
+</div>
+
+<nav id="nav2" class="lg:hidden bg-black flex items-center w-full fixed bottom-0 cursor-pointer justify-between px-4 py-2">
+    <a href="../html/index.html"> <img src="../Assets/icons8-home-50.png" alt="Home" class="w-8 cursor-pointer"></a>
+    <a href="../html/explore.html"><img src="../Assets/icons8-search-50 gray.png" alt="Search" class="w-8 cursor-pointer"></a>
+     <a href="" class="text-4xl text-[#c7c7c7] cursor-pointer">+</a>
+    <a href="../html/updates.html"> <img src="../Assets/icons8-comment-30 gray.png" alt=" cursor-pointer"></a>
+    <a href="../html/profile.html"> <div id="pfp" class="w-10 h-10 rounded-3xl bg-[url(../Assets/pfp.jpg)] bg-cover bg-center cursor-pointer cursor-pointer"></div></a>
+ </nav>
+
+<script src="../js/update.js"></script>
+</body>
+</html>

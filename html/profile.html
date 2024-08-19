@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest | profile</title>
+    <link rel="shortcut icon" href="../Assets/icons8-pinterest-48.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white">
+
+    <nav class="hidden bg-black lg:flex items-center sticky top-0 justify-between w-full px-4 py-2 pblack text-xl font-semibold">
+ 
+        <div id=" navbar" class="flex items-center space-x-6">
+        <img src="../Assets/icons8-pinterest-48.png" alt="logo" class="cursor-pointer">
+        <div id="navlist" class="flex items-center text-xl font-medium">
+            <a href="../html/index.html" class="focus:bg-white focus:text-black px-3 py-3 rounded-3xl">Home</a>
+            <a href="../html/explore.html" class="focus:bg-white focus:text-black px-3 py-3 rounded-3xl">Explore</a>
+            <a href="../html/create.html" class="focus:bg-white focus:text-black px-3 py-3 rounded-3xl">Create</a>
+        </div>
+        </div>
+
+        <div id="searchbar"
+            class="bg-[#e9e9e9] space-x-4 px-2 rounded-3xl lg:w-[40%] xl:w-[50%] 2xl:w-[65%] overflow-hidden px-36 py-6 flex items-center justify-start relative">
+            <img src="../Assets/icons8-search-50.png" alt="search" class="w-8 absolute left-4 cursor-pointer">
+            <input type="text"
+                class="bg-gray-200 text-xl w-full caret-black outline-0 text-black placeholder:text-black absolute left-10"
+                placeholder="Search your Pins">
+        </div>
+
+        <div id="info" class="flex items-center space-x-8">
+            <img src="../Assets/icons8-bell-24.png" alt="notifications" class="w-8 cursor-pointer">
+            <img src="../Assets/icons8-comment-30.png" alt="updates" class="cursor-pointer">
+            <div id="profile" class="flex items-center space-x-2">
+                <a href="../html/profile.html" class="active:border-4 active:border-blue-100 rounded-full hover:shadow-md hover:shadow-[#c7c7c7]">
+                    <div id="pfp"
+                        class="w-10 h-10 rounded-3xl bg-[url(../Assets/pfp.jpg)] bg-cover bg-center cursor-pointer">
+                    </div>
+                </a>
+                <img src="../Assets/icons8-chevron-down-24.png" alt="" class="cursor-pointer">
+            </div>
+        </div>
+
+    </nav>
+
+    <div id="hero" class="py-4">
+
+        <div id="prof" class="flex flex-col justify-center items-center">
+
+            <img src="../Assets/pfp.jpg" alt="profile" class="rounded-full w-36 py-4 cursor-pointer">
+            <h1 class="text-3xl font-semibold">Kaif</h1>
+            <h5 class="text-gray-200 pb-1">@itskaif07</h5>
+            <h4 class="text-xl">0 following</h4>
+
+            <div id="sne" class="py-4 space-x-2">
+                <button id="share"
+                    class="bg-black hover:bg-gray-[#efefef] focus:bg-white focus:text-black text-white text-xl font-semibold px-6 py-3 rounded-full">Share</button>
+                <button id="edit"
+                    class="bg-black hover:bg-gray-[#efefef] focus:bg-white focus:text-black text-white text-xl font-semibold px-6 py-3 rounded-full">Edit
+                    Profile</button>
+            </div>
+
+            <div id="cns" class="flex items-center space-x-4 text-2xl font-medium pt-4">
+                <button id="cr" class="cursor-pointer relative after:w-full inline-block after:h-1 after:bg-white focus:after:block rounded-full">Created</button>
+
+                <button id="sv" class="cursor-pointer relative after:w-full inline-block after:h-1 after:bg-white focus:after:block rounded-full">Saved</button>
+            </div>
+
+            <div id="created" class="py-16 text-center space-y-4">
+                <h1 class="text-xl">Nothing to show...yet! Pins you create will live here.</h1>
+                <button class="bg-[#e60023] px-5 py-2 text-xl font-medium rounded-full">Create Pin</button>
+                <div id="question" class="fixed cursor-pointer right-4 bottom-14 lg:bottom-4">
+                    <h1 class="bg-white px-6 py-3 rounded-full hover:bg-[#e9e9e9] text-4xl  font-bold text-black">?</h1>
+                </div>
+            </div>
+
+            <div id="saved" class="py-16 text-center space-y-4 hidden">
+                <img src="../Assets/icons8-equalizer-64.png" alt="" class="cursor-pointer fixed bottom-52 left-4 w-6">
+                <div class="text-4xl font-medium cursor-pointer fixed bottom-52 right-4">+</div>
+                <h1 class="text-xl">Nothing to show...yet! Pins you save will live here.</h1>
+                <button class="bg-[#e60023] px-5 py-2 text-xl font-medium rounded-full">Find Ideas</button>
+                <div id="question" class="fixed cursor-pointer right-4 bottom-14 lg:bottom-4">
+                    <h1 class="bg-white px-6 py-3 rounded-full hover:bg-[#e9e9e9] text-4xl  font-bold text-black">?</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <nav id="nav2" class="lg:hidden bg-black flex items-center w-full fixed bottom-0 cursor-pointer justify-between px-4 py-2">
+       <a href="../html/index.html"> <img src="../Assets/icons8-home-50.png" alt="Home" class="w-8 cursor-pointer"></a>
+       <a href="../html/explore.html"><img src="../Assets/icons8-search-50 gray.png" alt="Search" class="w-8 cursor-pointer"></a>
+        <a href="" class="text-4xl text-[#c7c7c7] cursor-pointer">+</a>
+       <a href="../html/updates.html"> <img src="../Assets/icons8-comment-30 gray.png" alt=" cursor-pointer"></a>
+       <a href="../html/profile.html"> <div id="pfp" class="w-10 h-10 rounded-3xl bg-[url(../Assets/pfp.jpg)] bg-cover bg-center cursor-pointer cursor-pointer"></div></a>
+    </nav>
+
+
+    <script src="../js/profile.js"></script>
+</body>
+
+</html>

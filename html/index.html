@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+    <link rel="shortcut icon" href="../Assets/icons8-pinterest-48.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black">
+
+    <div id="home" class="bg-black w-full h-screen text-white">
+
+      <nav class="hidden bg-black lg:flex items-center sticky top-0 justify-between w-full px-4 py-5">
+
+            <div id="navbar" class="flex items-center space-x-6">
+                <img src="../Assets/icons8-pinterest-48.png" alt="logo" class="cursor-pointer">
+                <div id="navlist" class="flex items-center text-xl font-medium">
+                    <a href="../html/index.html" class="focus:bg-white focus:text-black px-3 py-3 rounded-3xl">Home</a>
+                    <a href="../html/explore.html" class="focus:bg-white focus:text-black px-3 py-3 rounded-3xl">Explore</a>
+                    <a href="../html/create.html" class="focus:bg-white focus:text-black px-3 py-3 rounded-3xl">Create</a>
+                </div>
+            </div>
+
+            <div id="searchbar"
+                class="bg-gray-200 space-x-4 px-2 rounded-3xl lg:w-[40%] xl:w-[50%] 2xl:w-[65%] overflow-hidden px-36 py-6 flex items-center justify-start relative">
+                <img src="../Assets/icons8-search-50.png" alt="search" class="w-8 absolute left-4 cursor-pointer">
+                <input type="text"
+                    class="bg-gray-200 text-xl w-full caret-black outline-0 text-black placeholder:text-black absolute left-10"
+                    placeholder="Search your Pins">
+            </div>
+
+            <div id="info" class="flex items-center space-x-8">
+                <img src="../Assets/icons8-bell-24.png" alt="notifications" class="w-8 cursor-pointer">
+                <img src="../Assets/icons8-comment-30.png" alt="updates" class="cursor-pointer">
+                <div id="profile" class="flex items-center space-x-2">
+                    <a href="../html/profile.html"
+                        class="active:border-4 active:border-blue-100 rounded-full hover:shadow-md hover:shadow-[#c7c7c7]">
+                        <div id="pfp"
+                            class="w-10 h-10 rounded-3xl bg-[url(../Assets/pfp.jpg)] bg-cover bg-center cursor-pointer">
+                        </div>
+                    </a>
+                    <img src="../Assets/icons8-chevron-down-24.png" alt="" class="cursor-pointer">
+                </div>
+            </div>
+
+        </nav> 
+
+        <nav id="nav2"
+            class="lg:hidden bg-black flex items-center w-full fixed bottom-0 cursor-pointer justify-between px-4 py-2">
+            <a href="../html/index.html"><img src="../Assets/icons8-home-50.png" alt="Home" class="w-8 cursor-pointer"></a>
+            <a href="../html/explore.html"> <img src="../Assets/icons8-search-50 gray.png" alt="Search"
+                    class="w-8 cursor-pointer"></a>
+            <a href="" class="text-4xl text-[#c7c7c7] cursor-pointer">+</a>
+            <a href="../html/updates.html"> <img src="../Assets/icons8-comment-30 gray.png" alt=" cursor-pointer"> </a>
+            <a href="../html/profile.html">
+                <div id="pfp"
+                    class="w-10 h-10 rounded-3xl bg-[url(../Assets/pfp.jpg)] bg-cover bg-center cursor-pointer cursor-pointer">
+                </div>
+            </a>
+        </nav>
+
+        <div id="pictures" class="flex flex-wrap justify-evenly space-x-4">
+        </div>
+
+    </div>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
